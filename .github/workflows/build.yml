@@ -1,4 +1,4 @@
-
+      
 
 # Tested: 2024/08/05
 # by Kasper Arfman
@@ -28,7 +28,7 @@ jobs:
           yes | buildozer -v android debug
 
       - name: Upload artifacts
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4.5.0
         with:
           name: package
           path: bin/*.apk
