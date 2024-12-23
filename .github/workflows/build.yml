@@ -21,8 +21,6 @@ jobs:
           pip install --user --upgrade Cython virtualenv
           pip install --user --upgrade buildozer
           echo 'export PATH=$PATH:~/.local/bin/' >> ~/.bashrc
-      - name: Setup Java JDK
-        uses: actions/setup-java@v4.6.0
       - name: Handle Java path
         run: |
           yes | buildozer -v android debug
